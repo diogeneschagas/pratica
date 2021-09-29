@@ -36,7 +36,7 @@ public class FeedPage {
 		
 		areaTexto.sendKeys(
 				"Este post foi feito usando Selenium Web Driver e o cenário escrito em Gherkin com o framework Cucumber.\r\n"
-						+ "\r\n" + "O repositório está em https://github.com/diogeneschagas/automation");
+						+ "\r\n" + "O repositório está em https://github.com/diogeneschagas/pratica");
 	}
 
 	public void carregarVideo() {

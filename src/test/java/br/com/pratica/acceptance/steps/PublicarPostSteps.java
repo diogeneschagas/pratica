@@ -22,11 +22,12 @@ public class PublicarPostSteps implements io.cucumber.java8.Pt {
 			feedPage.digitarPost();
 		});
 
-		Quando("carregar o video", () -> {
-			//feedPage.carregarVideo();
-		});
-
+		// TENTATIVA DE CARREGAR O VÍDEO
+		/*
+		 * Quando("carregar o video", () -> { //feedPage.carregarVideo(); });
+		 */
 		Entao("o post deve ser publicado", () -> {
+			feedPage.clicarPublicar();
 		});
 
 	}
