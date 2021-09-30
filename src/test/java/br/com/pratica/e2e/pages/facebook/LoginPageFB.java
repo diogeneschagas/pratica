@@ -5,18 +5,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 
-public class LoginPage {
+public class LoginPageFB {
 
 	private WebDriver driver;
 	
 	private static String URL_LOGIN_PAGE = "https://www.fb.com/";
 	
-	public LoginPage(WebDriver driver) {
+	public LoginPageFB(WebDriver driver) {
 		this.driver = driver;
 		
 	}
 	
-	public FeedPage realizarLoginComo(String login, String senha) {
+	public FeedPageFB realizarLoginComo(String login, String senha) {
 		driver.get(URL_LOGIN_PAGE);
 		
 		/*
@@ -24,20 +24,20 @@ public class LoginPage {
 		 * driver.findElement(By.className("nav__button-tertiary")); botaologin.click();
 		 */		
 		
-		WebElement txtlogin = driver.findElement(By.id("username"));
-		WebElement txtsenha = driver.findElement(By.id("password"));
+		WebElement txtlogin = driver.findElement(By.id("email"));
+		WebElement txtsenha = driver.findElement(By.id("pass"));
 //		WebElement showPass = driver.findElement(By.id("password-visibility-toggle"));
 		
 		txtlogin.sendKeys(login);
 	    txtsenha.sendKeys(senha);
 //		showPass.click();
 	    txtlogin.submit();
-		return new FeedPage(driver);
+		return new FeedPageFB(driver);
 		
 	}
 	
-	public FeedPage realizaLoginComoDiogenes() {
-		return realizarLoginComo("diogeneschagas20@gmail.com", "diochagas20");
+	public FeedPageFB realizaLoginComoDiogenes() {
+		return realizarLoginComo("email", "senha");
 
     }
 

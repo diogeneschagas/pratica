@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 
 import br.com.pratica.e2e.pages.linkedin.LoginPage;
+import br.com.pratica.e2e.pages.facebook.LoginPageFB;
 
 public class Browser {
 	private WebDriver driver;
@@ -20,6 +21,10 @@ public class Browser {
 
 	public LoginPage getLoginPage() {
 		return new LoginPage(driver);
+	}
+	
+	public LoginPageFB getLoginPageFB() {
+		return new LoginPageFB(driver);
 	}
 	
 	public void clean() {

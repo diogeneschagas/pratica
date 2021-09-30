@@ -30,13 +30,7 @@ public class PublicarPostSteps implements io.cucumber.java8.Pt {
 		Entao("o post deve ser publicado", () -> {
 			feedPage.clicarPublicar();
 		});
-		
-		Dado("que eu acesse o facebook", () -> {
-			this.browser = new Browser();
-			loginPage = browser.getLoginPage();
-			feedPage = loginPage.realizaLoginComoDiogenes();
-			
-		});
+
 
 	}
 }

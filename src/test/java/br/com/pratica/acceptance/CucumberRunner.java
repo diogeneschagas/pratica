@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "classpath:features", tags = "@Facebook")
+@CucumberOptions(features = "classpath:features", tags = "@Facebook and not @LinkedIn")
 public class CucumberRunner {
 	
 }
