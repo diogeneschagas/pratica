@@ -1,4 +1,4 @@
-package br.com.pratica.e2e.pages;
+package br.com.pratica.e2e.pages.linkedin;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

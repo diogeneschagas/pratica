@@ -4,6 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 
+import br.com.pratica.e2e.pages.linkedin.LoginPage;
+
 public class Browser {
 	private WebDriver driver;
 

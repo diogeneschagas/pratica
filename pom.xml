@@ -15,11 +15,11 @@
 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
 			<version>${cucumber.version}</version>
-		</dependency>
+		</dependency> -->
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
 		<dependency>

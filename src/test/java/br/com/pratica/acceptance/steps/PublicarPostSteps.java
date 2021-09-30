@@ -1,8 +1,8 @@
 package br.com.pratica.acceptance.steps;
 
 import br.com.pratica.e2e.pages.Browser;
-import br.com.pratica.e2e.pages.FeedPage;
-import br.com.pratica.e2e.pages.LoginPage;
+import br.com.pratica.e2e.pages.linkedin.FeedPage;
+import br.com.pratica.e2e.pages.linkedin.LoginPage;
 
 public class PublicarPostSteps implements io.cucumber.java8.Pt {
 
@@ -11,6 +11,7 @@ public class PublicarPostSteps implements io.cucumber.java8.Pt {
 	private Browser browser;
 	
 	public PublicarPostSteps() {
+//		Post LinkedIn
 		
 		Dado("que eu acesse o linkedin", () -> {
 			this.browser = new Browser();
@@ -28,6 +29,13 @@ public class PublicarPostSteps implements io.cucumber.java8.Pt {
 		 */
 		Entao("o post deve ser publicado", () -> {
 			feedPage.clicarPublicar();
+		});
+		
+		Dado("que eu acesse o facebook", () -> {
+			this.browser = new Browser();
+			loginPage = browser.getLoginPage();
+			feedPage = loginPage.realizaLoginComoDiogenes();
+			
 		});
 
 	}
